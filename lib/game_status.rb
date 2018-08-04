@@ -11,3 +11,10 @@ WIN_COMBINATIONS = [
   [0,4,8]  #left-right diagonal
   [6,4,2]  #right-left diagonal
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.any? do |win_combo|
+    (board[win_combo[0]] == board[win_combo[1]] && board[win_combo[1]] == board[win_combo[2]])
+    win_combo
+  end
+end
