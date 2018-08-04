@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  WIN_COMBINATIONS.detect? do |win|
-    position_taken?(board,win[0]) && (board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]]) 
+  WIN_COMBINATIONS.detect do |win|
+    position_taken?(board,win[0]) && (board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]])
   end
 end
