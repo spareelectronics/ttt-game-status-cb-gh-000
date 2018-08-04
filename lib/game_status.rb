@@ -20,4 +20,5 @@ def won?(board)
     puts position_taken?(board,win[0])
     (position_taken?(board,win[0]) && board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]])
   end
+  win
 end
