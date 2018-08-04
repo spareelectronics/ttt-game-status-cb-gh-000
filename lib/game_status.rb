@@ -18,6 +18,6 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.any? do |win|
     (position_taken?(board,win[0]) && board[win[0]] == board[win[1]] && board[win[1]] == board[win[2]])
-    win_combo
+    win
   end
 end
